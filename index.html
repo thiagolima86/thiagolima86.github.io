@@ -10,73 +10,268 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Thiago Lima dev</title>
+    <script>
+      function birth() {
+        var date = new Date,
+        current_year = date.getFullYear(),
+        current_month = date.getMonth() + 1,
+        current_day = date.getDate(),
+
+        year = 1986,
+        month = 4,
+        day = 10,
+
+        age = current_year - year;
+
+        if (current_month < month || 
+          (current_month == month && current_day < day)) {
+            age--;
+        }
+        document.write(age)
+      }
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Thiago Lima</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Sobre mim</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Experiências</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-
       
-    <main>
-      <header class="container-fluid">
-        <div class="title">
-          <div>
-            <h1>Thiago Lima</h1>
-            <h3>Desenvolvedor</h3>
-          </div>
-        </div>
-      </header>
+      <main class="container mt-5 pt-4 mb-5 pb-4">
+        <div class="row">
+          <aside class="sidebar col-lg-3 col-md-5">
+            <figure class="picture">
+              <img src="images/foto.jpg" alt="">
+              <figcaption class="mt-2">Olá, meu nome é thiago, tenho <strong><script>birth()</script> anos</strong>, trabalho como desenvolvedor desde 2006. Sou cristão, casado, tenho um filho chamado Isaac. Moro em Fortaleza, Ceará, Brasil</figcaption>
+            </figure>
 
-      <div class="terminal container">
-        <div class="title_bar row">
+            <div class="infos">
+              <strong>Fone: </strong>(85) 9 8102-0026
+              <br>
+              <strong>Email: </strong> thiagolima86@gmail.com
+            </div>
+
+            <div class="icons mt-3 mb-3">
+              <a href="https://api.whatsapp.com/send?phone=5585981020026" target="_blank">
+                <img src="images/icon-whatsapp.png" alt="">
+              </a>
+              <a href="https://linkedin.com/in/thiagodeveloper" target="_blank">
+                <img src="images/icon-linkedin.png" alt="">
+              </a>
+              <a href="https://github.com/thiagolima86" target="_blank">
+                <img src="images/icon-github.png" alt="">
+              </a>
+            </div>
+          </aside>
           <div class="col">
-            Sobre mim
-          </div>
-        </div>
-        <div class="prompt row">
-          <div class="col">
-            Olá, meu nome é thiago, tenho 35 anos, trabalho como desenvolvedor desde 2006. Sou casado, tenho um filho chamado Isaac.
-            Sou cristão e prezo pelos bons costumes e tradição.
-            <br><br>
-            Comecei minha carreira como desenvolvedor web, na linguagem PHP. Naquela época a linguagem era muito focada em 
-            desenvolvimento de Websites, mas eu já desenvolvia alguns sistemas pequenos. Depois evolui e passei a trabalhar com Frameworks.
-            <br><br>
-            A partir de 2019, eu passei a trabalhar com a tecnologia Ruby On Rails. Tenho aprendi muitas coisas interessantes,
-            como por exemplo, padrões de projeto e design orientado a objeto e outras coisas sobre arquitetura também. Tenho buscado
-            me aperfeiçoar no TDD e isso tem se mostrado muito sádio.
-            <br><br>
-            Tenho  uma filosofia de trabalho, onde busco ter prazer na entrega de qualidade. Independente, da linguagem, framework
-            ou mesmo diferentes funções que eu venha a exercer,  quero que minha satisfação esteja em servir bem, o proposito
-            a qual me foi destinado. Acredito em vocação, que não somos nós que escolhemos em que vamos trabalhar, mas que somos
-            vocacionados, chamados, convocados para exercê-lo. E se recebemos essa confiança, devemos fazê-lo diligentemente. 
-            <br>
-            ~<br>
-            ~<br>
-            ~<br>
+            <header class="title">
+              <div>
+                <h1>THIAGO V N LIMA</h1>
+                <h3>Desenvolvedor de sistema</h3>
+              </div>
+            </header>
+
+            <div class="content">
+              <section>
+                <h2>Formação superior</h2>
+                <article>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-wyden">
+                          Análise e Desenvolvimento de Sistemas
+                        </button>
+                      </h2>
+                      <div id="panel-wyden" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p><strong>Instituição:</strong> Faculdade Wyden</p>
+                          <p><strong>Status:</strong> Em andamento</p>
+                          <p><strong>Início:</strong> 2020</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-uva">
+                          Web Designer e Web Máster 
+                        </button>
+                      </h2>
+                      <div id="panel-uva" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p><strong>Instituição:</strong> Univers. Estadual Vale do Acaraú (UVA)</p>
+                          <p><strong>Status:</strong> Incompleto</p>
+                          <p><strong>Período:</strong> 2005 - 2007</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+
+              <section>
+                <h2>Formação extracurricular</h2>
+                <article>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-cursos">
+                          Lista de cursos
+                        </button>
+                      </h2>
+                      <div id="panel-cursos" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>Ruby on Rails- <strong>Udemy</strong></li>
+                            <li>Flutter - <strong>Udemy (cursando)</strong></li>
+                            <li>Scrum Master - <strong>Udemy</strong></li>
+                            <li>Laravel Completo - <strong>Udemy</strong></li>
+                            <li>Php e Mysql – <strong>Evolução – (40h)	</strong></li>
+                            <li>Codeigniter PHP - <strong>Treinaweb  (16h)</strong></li>
+                            <li>Ionic 2  e AngularJs 2- <strong>Bootcampi (12h)</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+
+
+              <section>
+                <h2>Experiências Profissional</h2>
+                <article>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-monde">
+                          Monde (atual)
+                        </button>
+                      </h2>
+                      <div id="panel-monde" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p><strong>Cargo:</strong> Desenvolvedor Ruby on Rails Pleno</p>
+                          <p><strong>Início:</strong> 2021</p>
+                          <p><strong>Descrição: </strong>
+                            Trabalhei no desenvolvimento de sistema de agência de viagem. O sistema tem uma api Ruby on Rails para ser consumida pela interface desktop e tem um pouco de interface web onde também trabalhei nessa parte, exceto no Desktop. Trabalhei criando novas features e também em correção de bugs. Utilizei alguns designers fora do MVC, tais como Services, Factories, Singleton, Adapters e Decorators
+                          </p>
+                          <p><strong>Ferramentas: </strong>
+                            Ruby on Rails, ApiRest, Git, Github, Pull Request, Devise, TDD, Rspec, VCR, Capibara, Sidekiq/redis, Postgres, Pgadmin, Apartment, Slim, Css, Javascript, Jira, Slack, Coverage, Rollbar, ShapeUp
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-unisystem">
+                          Unisystems
+                        </button>
+                      </h2>
+                      <div id="panel-unisystem" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p><strong>Cargo:</strong> Desenvolvedor Ruby on Rails</p>
+                          <p><strong>Período:</strong> 2019 - 2021</p>
+                          <p><strong>Descrição: </strong>
+                            Trabalhei no desenvolvimento de sistema monolito de WMS e TMS logístico. Trabalhei desenvolvendo software como fullstack, tanto no desenvolvimento do backend como no frontend. Também desenhei diagramas e levantei requisitos. Foi promovido a liderança para gerenciar a equipe e o projeto. Como gestor técnico, implementei o Scrum e a cultura Ágil.
+                          </p>
+                          <p><strong>Ferramentas: </strong>
+                            Ruby on Rails, Git, Github, Gitlab, Devise, TDD, Rspec, Sidekiq/Redis, Postgres, Pgadmin, Apartment, ERB/HTML, Sass/Css, Javascript, VueJs, Jira, Docker, Scrum
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-orb">
+                          Orb Digital Branding
+                        </button>
+                      </h2>
+                      <div id="panel-orb" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p><strong>Cargo:</strong> Desenvolvedor Fullstack PHP</p>
+                          <p><strong>Período:</strong> 2015 - 2018</p>
+                          <p><strong>Descrição: </strong>
+                            Trabalhei nesta agência de marketing digital, desenvolvendo vários aplicativos web e websites. Trabalhei com Wordpress e Codeigniter principalmente com backend e raramente em frontend. Foram feitas integrações consumindo Api de fornecedores e também criando algumas APIs Restfull.
+                          </p>
+                          <p><strong>Ferramentas: </strong>
+                            Php, Mysql, Codeigniter, Wordpress, HTML, CSS e Javascript, Jquery, Git, Github, Vagrant, Runrunit
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+              <section>
+                <h2>Conhecimentos relevantes</h2>
+                <article>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-ferramentas">
+                          Lista de ferramentas
+                        </button>
+                      </h2>
+                      <div id="panel-ferramentas" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>
+                              Ruby on Rails
+                              <ul>
+                                <li>Sidekiq</li>
+                                <li>Devise</li>
+                                <li>Apartment</li>
+                                <li>Rspec</li>
+                              </ul>
+                            </li>
+                            <li>HTML5 / CSS3</li>
+                            <li>PHP (Codeigniter / Laravel)</li>
+                            <li>PL/SQL</li>
+                            <li>Javascript (Jquery / Vuejs)</li>
+                            <li>Bootstrap, Materialize</li>
+                            <li>DB (Mysql, Sqlite, Postgres)</li>
+                            <li>Sass (CSS)</li>
+                            <li>GIT (Github, Pull Request)</li>
+                            <li>Docker</li>
+                            <li>Linux / ShellScript</li>
+                            <li>Gestão scrum</li>
+                            <li>TDD</li>
+                            <li>Clean Code</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+              <section>
+                <h2>Livros lidos e recomendados</h2>
+                <article>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-ferramentas">
+                          Lista de livros
+                        </button>
+                      </h2>
+                      <div id="panel-ferramentas" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>The clean coder <strong>Robert C. Martin</strong></li>
+                            <li>Clean code <strong>Robert C. Martin</strong></li>
+                            <li>Migrando sistemas monolíticos para microserviços <strong>Sam Newman</strong></li>
+                            <li>Pratical object-oriented design <strong>Sandi Metz</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+            </div>
 
           </div>
         </div>
-      </div>
-
-    </main>
-    
+      </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

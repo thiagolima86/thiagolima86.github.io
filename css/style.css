@@ -7,36 +7,90 @@ body{
     background-size: cover;
     color:rgb(183, 197, 190);
 }
-
-header{
-    background-color: #121b1b;
-    border-radius: 0 0 10px 10px;
+main{
+    background-color: #363f3f;
+    border-radius: 10px;
 }
 
-header .title{
+aside.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+figure.picture{
+    width: 70%;
+}
+
+figure.picture img{
+    width: 100%;
+}
+
+
+header.title{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px;
+    height: 132px;
     text-align: center;
 }
 
-.terminal{
-    background-color: rgba(0, 0, 0, 0.9);
-    min-height: 50px;
-    border-radius: 5px;
+header.title h3{
+    font-weight: lighter;
 }
 
-.terminal .title_bar{
-    background-color: #292929;
-    font-weight: bold;
-    padding: 5px 0;
-    border-radius: 5px 5px 0 0;
-    margin-top: 30px;
+.infos{
+    font-size: 0.8em;
 }
-.terminal .prompt{
-    min-height: 150px;
-    color: chartreuse;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.3em;
+
+.icons{
+
+}
+.icons a{
+    margin-right: 10px;
+}
+.icons img{
+    width:35px
+}
+
+.content section{
+    margin-top: 3rem;
+}
+
+
+.accordion-button {
+    color: #b5b5b5;
+    background-color: #121b1b;
+}
+
+.accordion-button:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 25%);
+}
+
+.accordion-item {
+    background-color: #3a3a3a;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #121b1b;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+
+@media (min-width: 576px){
+    aside.sidebar {
+        text-align: center;
+    }
+    
+    figure.picture {
+        text-align: center;
+        margin-left: auto;
+    margin-right: auto;
+    }
 }
