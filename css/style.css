@@ -83,7 +83,7 @@ header.title h3{
 
 
 
-@media (min-width: 576px){
+@media (max-width: 767px){
     aside.sidebar {
         text-align: center;
     }
@@ -91,6 +91,6 @@ header.title h3{
     figure.picture {
         text-align: center;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 }
