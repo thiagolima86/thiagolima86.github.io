@@ -804,8 +804,6 @@ padding-bottom: 40px;
     width: 40%;
     padding-left: 1%;
     margin: 1%;
-    margin-left: -40px;
-    margin-top: 160px;
     z-index: 3;
     opacity: 1;
     background: #080808;
@@ -813,20 +811,45 @@ padding-bottom: 40px;
     padding-bottom: 10px;
 }
 
-.portfolio-text h2{
+.portfolio-content-header{
+    display: flex;
+    padding: 20px;
+}
+
+.portfolio-content-header .portfolio-icon{
+    height: 80px;
+    margin-right: 20px;
+}
+
+.portfolio-title h2{
     font-size: 35px;
     font-family: poppins;
     font-weight: 200;
-    padding: 20px;
     color: #c70039;
     transition: all .4s ease;
 }
+
+.portfolio-title h3{
+    font-size: 24px;
+    font-family: poppins;
+    font-weight: 200;
+}
+
+.portfolio-title h3 small {
+    font-size: 14px;
+    font-weight: 100;
+    color: #434141;
+}
+
 .portfolio-text p{
     font-size: 16px;
     opacity: .8;
     font-family: poppins;
     font-weight: 200;
-    padding: 20px;
+    padding: 5px 20px;
+}
+.portfolio-text p.color {
+    margin-bottom: -10px;
 }
 .portfolio-text button{
     font-size: 16px;
@@ -1078,7 +1101,7 @@ padding-bottom: 40px;
 .contact-info{
     width: 40%;
     height: 500px;
-    background: url(../images/contact-back.jpg);
+    background: url(../images/contact-bg.png);
     background-position: center;
     background-size: cover;
     border-radius: 16px;
