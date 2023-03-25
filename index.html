@@ -1,281 +1,592 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Thiago Lima dev</title>
+    <meta name="description" content="Thiago Lima - systems analyst and developer ruby on rails" />
+	<meta name="keywords" content="blog, business card, creative, creative portfolio, online resume, personal, portfolio, professional cv, responsive portfolio, resume, ruby on rails, developer" />
+	<meta name="author" content="Thiago Lima" />
+    <title>Thiago Lima - systems analyst and developer ruby on rails</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script>
-      function birth() {
-        var date = new Date,
-        current_year = date.getFullYear(),
-        current_month = date.getMonth() + 1,
-        current_day = date.getDate(),
-
-        year = 1986,
-        month = 4,
-        day = 10,
-
-        age = current_year - year;
-
-        if (current_month < month || 
-          (current_month == month && current_day < day)) {
-            age--;
+        function birth(y, m, d) {
+          var date = new Date,
+          current_year = date.getFullYear(),
+          current_month = date.getMonth() + 1,
+          current_day = date.getDate(),
+  
+          year = y,
+          month = m,
+          day = d,
+  
+          age = current_year - year;
+  
+          if (current_month < month || 
+            (current_month == month && current_day < day)) {
+              age--;
+          }
+          document.write(age)
         }
-        document.write(age)
-      }
-    </script>
+      </script>
 </head>
 <body>
-      
-      <main class="container mt-5 pt-4 mb-5 pb-4">
-        <div class="row">
-          <aside class="sidebar col-lg-3 col-md-5">
-            <figure class="picture">
-              <img src="images/foto.jpg" alt="">
-              <figcaption class="mt-2">Olá, meu nome é thiago, tenho <strong><script>birth()</script> anos</strong>, trabalho como desenvolvedor desde 2006. Sou cristão, casado, tenho um filho chamado Isaac. Moro em Fortaleza, Ceará, Brasil</figcaption>
-            </figure>
-
-            <div class="infos">
-              <strong>Fone: </strong>(85) 9 8102-0026
-              <br>
-              <strong>Email: </strong> thiagolima86@gmail.com
-            </div>
-
-            <div class="icons mt-3 mb-3">
-              <a href="https://api.whatsapp.com/send?phone=5585981020026" target="_blank">
-                <img src="images/icon-whatsapp.png" alt="">
-              </a>
-              <a href="https://linkedin.com/in/thiagodeveloper" target="_blank">
-                <img src="images/icon-linkedin.png" alt="">
-              </a>
-              <a href="https://github.com/thiagolima86" target="_blank">
-                <img src="images/icon-github.png" alt="">
-              </a>
-              <a href="https://medium.com/@thiagolimadeveloper" target="_blank">
-                <img src="images/icon-medium.png" alt="">
-              </a>
-            </div>
-          </aside>
-          <div class="col">
-            <header class="title">
-              <div>
-                <h1>THIAGO V N LIMA</h1>
-                <h3>Desenvolvedor de sistema</h3>
-              </div>
-            </header>
-
-            <div class="content">
-              <section>
-                <h2>Formação superior</h2>
-                <article>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-wyden">
-                          Análise e Desenvolvimento de Sistemas
-                        </button>
-                      </h2>
-                      <div id="panel-wyden" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                          <p><strong>Instituição:</strong> Faculdade Wyden</p>
-                          <p><strong>Status:</strong> Em andamento</p>
-                          <p><strong>Início:</strong> 2020</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-uva">
-                          Web Designer e Web Máster 
-                        </button>
-                      </h2>
-                      <div id="panel-uva" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                          <p><strong>Instituição:</strong> Univers. Estadual Vale do Acaraú (UVA)</p>
-                          <p><strong>Status:</strong> Incompleto</p>
-                          <p><strong>Período:</strong> 2005 - 2007</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-
-              <section>
-                <h2>Formação extracurricular</h2>
-                <article>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-cursos">
-                          Lista de cursos
-                        </button>
-                      </h2>
-                      <div id="panel-cursos" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                          <ul>
-                            <li>Ruby on Rails- <strong>Udemy</strong></li>
-                            <li>Flutter - <strong>Udemy (cursando)</strong></li>
-                            <li>Scrum Master - <strong>Udemy</strong></li>
-                            <li>Laravel Completo - <strong>Udemy</strong></li>
-                            <li>Php e Mysql – <strong>Evolução – (40h)	</strong></li>
-                            <li>Codeigniter PHP - <strong>Treinaweb  (16h)</strong></li>
-                            <li>Ionic 2  e AngularJs 2- <strong>Bootcampi (12h)</strong></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-
-
-              <section>
-                <h2>Experiências Profissional</h2>
-                <article>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-monde">
-                          Monde (atual)
-                        </button>
-                      </h2>
-                      <div id="panel-monde" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                          <p><strong>Cargo:</strong> Desenvolvedor Ruby on Rails Pleno</p>
-                          <p><strong>Início:</strong> 2021</p>
-                          <p><strong>Descrição: </strong>
-                            Trabalhei no desenvolvimento de sistema de agência de viagem. O sistema tem uma api Ruby on Rails para ser consumida pela interface desktop e tem um pouco de interface web onde também trabalhei nessa parte, exceto no Desktop. Trabalhei criando novas features e também em correção de bugs. Utilizei alguns designers fora do MVC, tais como Services, Factories, Singleton, Adapters e Decorators
-                          </p>
-                          <p><strong>Ferramentas: </strong>
-                            Ruby on Rails, ApiRest, Git, Github, Pull Request, Devise, TDD, Rspec, VCR, Capibara, Sidekiq/redis, Postgres, Pgadmin, Apartment, Slim, Css, Javascript, Jira, Slack, Coverage, Rollbar, ShapeUp
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-unisystem">
-                          Unisystems
-                        </button>
-                      </h2>
-                      <div id="panel-unisystem" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                          <p><strong>Cargo:</strong> Desenvolvedor Ruby on Rails</p>
-                          <p><strong>Período:</strong> 2019 - 2021</p>
-                          <p><strong>Descrição: </strong>
-                            Trabalhei no desenvolvimento de sistema monolito de WMS e TMS logístico. Trabalhei desenvolvendo software como fullstack, tanto no desenvolvimento do backend como no frontend. Também desenhei diagramas e levantei requisitos. Foi promovido a liderança para gerenciar a equipe e o projeto. Como gestor técnico, implementei o Scrum e a cultura Ágil.
-                          </p>
-                          <p><strong>Ferramentas: </strong>
-                            Ruby on Rails, Git, Github, Gitlab, Devise, TDD, Rspec, Sidekiq/Redis, Postgres, Pgadmin, Apartment, ERB/HTML, Sass/Css, Javascript, VueJs, Jira, Docker, Scrum
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-orb">
-                          Orb Digital Branding
-                        </button>
-                      </h2>
-                      <div id="panel-orb" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                          <p><strong>Cargo:</strong> Desenvolvedor Fullstack PHP</p>
-                          <p><strong>Período:</strong> 2015 - 2018</p>
-                          <p><strong>Descrição: </strong>
-                            Trabalhei nesta agência de marketing digital, desenvolvendo vários aplicativos web e websites. Trabalhei com Wordpress e Codeigniter principalmente com backend e raramente em frontend. Foram feitas integrações consumindo Api de fornecedores e também criando algumas APIs Restfull.
-                          </p>
-                          <p><strong>Ferramentas: </strong>
-                            Php, Mysql, Codeigniter, Wordpress, HTML, CSS e Javascript, Jquery, Git, Github, Vagrant, Runrunit
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-              <section>
-                <h2>Conhecimentos relevantes</h2>
-                <article>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-ferramentas">
-                          Lista de ferramentas
-                        </button>
-                      </h2>
-                      <div id="panel-ferramentas" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                          <ul>
-                            <li>
-                              Ruby on Rails
-                              <ul>
-                                <li>Sidekiq</li>
-                                <li>Devise</li>
-                                <li>Apartment</li>
-                                <li>Rspec</li>
-                              </ul>
-                            </li>
-                            <li>HTML5 / CSS3</li>
-                            <li>PHP (Codeigniter / Laravel)</li>
-                            <li>PL/SQL</li>
-                            <li>Javascript (Jquery / Vuejs)</li>
-                            <li>Bootstrap, Materialize</li>
-                            <li>DB (Mysql, Sqlite, Postgres)</li>
-                            <li>Sass (CSS)</li>
-                            <li>GIT (Github, Pull Request)</li>
-                            <li>Docker</li>
-                            <li>Linux / ShellScript</li>
-                            <li>Gestão scrum</li>
-                            <li>TDD</li>
-                            <li>Clean Code</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-              <section>
-                <h2>Livros lidos e recomendados</h2>
-                <article>
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-livros">
-                          Lista de livros
-                        </button>
-                      </h2>
-                      <div id="panel-livros" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                          <ul>
-                            <li>The clean coder <strong>Robert C. Martin</strong></li>
-                            <li>Clean code <strong>Robert C. Martin</strong></li>
-                            <li>Migrando sistemas monolíticos para microserviços <strong>Sam Newman</strong></li>
-                            <li>Pratical object-oriented design <strong>Sandi Metz</strong></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </section>
-            </div>
-
-          </div>
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            <span class="color">Thiago</span>Lima 
         </div>
-      </main>
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="images/brasao.png" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                <a href="https://medium.com/@thiagolimadeveloper" data-text="BLOG" id="blog-link" target="_blank" >BLOG</a>
+                <a href="#" data-text="EXPERIENCES" id="portfolio-link" >EXPERIENCES</a>
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="images/brasao.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/thiagodeveloper/" target="_blank"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://github.com/thiagolima86" target="_blank"><img src="images/github-logo.svg" class="social-media" alt="github-logo"></a>
+                <a href="https://thiagolimadeveloper.medium.com/" target="_blank"><img src="images/medium-logo.svg" class="social-media" alt="medium-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://wa.me/5585981020026"  target="_blank"><img src="images/whatsapp-logo.svg" class="social-media" alt="whatsapp-logo"></a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                <div class="firstline"><span class="color">Thiago </span>Lima</div>
+                <div class="secondline">
+                I'm a
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Developer.", " Analist Systems.", " Engineer." ]'></span>
+            <span class="slash">|</span>
+        </div>
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+            <img src="images/man.jpg" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+            <!--about description-->
+               <span class="about-first-line">
+                    I'm creative 
+                    <span class="color">Ruby on Rails engineer</span>
+                     , from Fortaleza, Brazil </span>
+                     <br>
+               <span class="about-second-line">
+                <p>I'm Ruby on Rails engineer in Locaweb company. Graduated in Analysis and Development System in Wyden College. With  <script>birth(2006, 1, 1)</script> years of experience as professional web development. Currently I'm specializing in a post graduate course Data Science and Artifical Inteligence (original name: Ciencia de Dados e Inteligencia Artificial), and I'm learning to speaking English. </p>
+                <br>
+                <p>I'm creative. I like try new things. I like to build machines and to dismantle too. I prefere work in team, because I want to help people and be helped too. I want to work in a relaxed enviroment and remotely.</p>
+                <br>
+                <p>I'm married, I have a little boy named Isaac. I'm from Fortaleza, Brazil. I live in a touristic city.</p>
+               </span>
+               <div class="cv">
+                <a href="#"><button>Download <span class="colors">CV</span></button></a>
+            </div>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+                <img src="images/about.jpg" alt="Your Image">
+            </div>
+            </div>
+    
+            </div>
+            <!--services start-->
+            <div id="services">
+                <div class="color-changer">
+                    <div class="color-panel">
+                        <img src="images/gear.png" alt="">
+                    </div>
+                    <div class="color-selector">
+                        <div class="heading">Custom Colors</div>
+                        <div class="colors">
+                            <ul >
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+            <!--services header-->
+                    <div class="services-heading wow">
+                        <span class="color">Ed</span>ucation
+                    </div>
+            <!--services header end-->
+            <!--services content-->
+                    <div class="services-content">
+                           <div class="service-one service wow">
+                               <div class="service-img">
+                               <img src="images/award-solid.svg" alt="service-one">
+                               </div>
+                               <div class="service-description">
+                                <h2>Post Graduating in</h2>
+                                <p>Data Science anda Artifical Inteligence (specialization) <br> <big>in <strong>UNINTER</strong> College</big></p>
+                               </div>
+                           </div>
+                           <div class="service-two service wow">
+                               <div class="service-img">
+                               <img src="images/graduation-cap-solid.svg" alt="service-two">
+                               </div>
+                               <div class="service-description">
+                                <h2>Graduated in</h2>
+                                <p>Analysis and Development System  <br> <big>in <strong>Wyden</strong> College</big></p>
+                               </div>
+                           </div>
+                           
+                    </div>
+            </div>
+            <!--services content end-->
+            <!--services end-->
+            <div id="skills">
+                <h2 class="skills-header">
+                     Main <span class="color"> Skills</span>
+                </h2>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Ruby on Rails
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                SQL
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">86%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                HTML/CSS
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">95%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Javascript
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">83%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Vuejs
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Git
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Linux
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">93%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Docker
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                English
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">68%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                TDD
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                Creativity
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <h3 class="html">
+                                team work
+                            </h3>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="skills-header">
+                     To see more skills, <span class="color"> download</span> curriculum
+               </h3>
+            </div>
+    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+             <div class="footer-text">
+                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Thiago Lima
+             </div>
+            </div>
+    <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="portfolio-header"> <span class="color"> My </span> experiences
+            <span class ="header-caption"> Some places I<span class="color"> Worked</span></span></div>
+             <div id="portfolio-content">
+                <div class="portfolio portfolio-first" id="locaweb">
+                    <div class="portfolio-text">
+                        <div class="portfolio-content-header">
+                            <img src="images/ruby.svg" alt="ruby on rails developer" class="portfolio-icon">
+                            <div class="portfolio-title">
+                                <h2>Ruby on Rails engineer</h2>
+                                <h3 alt="company">Locaweb <small>Dec 2021 - current</small></h3>
+                            </div>
+                        </div>
+                        <p>I worked in email marketing app, it is a systems used to send email in lot. I developed some experience like Linux, pipeline in azure devops and cloud communication.</p>
+                        <p>In my everyday, I needed to do analisis to discovery problems and solve it. I was encouraged by team to give my opnion about the problems. Help the squad to do a 
+                            hard migration of data from an old to the new aplication, this was challenger. Normaly, when I solved the problem or developed some feature,
+                            I pushed the code to repository and I created a Pull request to code review. I tested the feature or fix in QA enviroment before put it in production. Often we worked in pair programming</p>
+                        <p class="color">Skills</p>
+                        <p>Ruby on Rails, Rspec, TDD, Vuejs, JWT, Shell Script, automations, CI/CD, azure devops, Docker, API Restfull, Git, Code Review, Pull Request, SQL, Postgres, Tenant, Metabase, new realic, sentry </p>
+                        <div class="button"><a href="#monde"><button><span class="index"> next experience<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-seccond" id="monde">
+                    <div class="portfolio-text">
+                        <div class="portfolio-content-header">
+                            <img src="images/ruby.svg" alt="ruby on rails developer" class="portfolio-icon">
+                            <div class="portfolio-title">
+                                <h2>Ruby on Rails engineer</h2>
+                                <h3 alt="company">Monde Sistemas <small>Apr 2021 - Nov 2021</small></h3>
+                            </div>
+                        </div>
+                        <p>I worked in a management system for tourism agency. I learned about design pattern, TDD, Clean code. I used Rspec, Factory Bot, VCR, Git, Github, Rubocop</p>
+                        <p>In my every day, I developed features and bug fix. I sent the code to github and created the pull request to review. Sometimes we worked in pair programming </p>
+                   
+                        <p class="color">Skills</p>
+                        <p>Ruby on Rails, Rspec, VCR, TDD, Rubocop, API Restfull, Git, Code Review, Pull Request, Github, SQL, Postgres, Tenant, Docker </p>
+                        <div class="button"><a href="#unisystems"><button><span class="index"> next experience<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-seccond" id="unisystems">
+                    <div class="portfolio-text">
+                        <div class="portfolio-content-header">
+                            <img src="images/ruby.svg" alt="ruby on rails developer" class="portfolio-icon">
+                            <div class="portfolio-title">
+                                <h2>Ruby on Rails engineer</h2>
+                                <h3 alt="company">Unisystems <small>Jul 2019 - Apr 2021</small></h3>
+                            </div>
+                        </div>
+                        <p>In this company, I started to development Ruby on Rails. I worked with the logistic system, kind WMS and TMS. I made the integration with government API, to emit CTE. I developed the wirehouse adressing aplication. I used Jquery, coffescript, Devise, Apartment, assets pipeline, heroku, postgres</p>
+                        <p>I also led the team, and managed the projects. I implemented the scrum methodology. </p>
+                   
+                        <p class="color">Skills</p>
+                        <p>Ruby on Rails, Vuejs, API Restfull, Git, Gitlab, SQL, Postgres, Tenant, Docker </p>
+                        <div class="button"><a href="#locaweb"><button><span class="index"> back to first<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Thiago Lima
+                </div>
+               </div>
+       <!--copyright-section-->
+             </div>
+        <!--portfolio end-->
+     <div id="contact">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+         <div class="contact-header">Contact <span class="color"> Me</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch To Hiring.</div></div>
+        <div class="contact-content">
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Name</h6>
+                        <p>Thiago Lima</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Location</h6>
+                      <p>Fortaleza, BR</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Whatsapp</h6>
+                      <p>+55 (85) 9 8102.0026</p>
+                </div>
+              </div>
+              
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Email</h6>
+                        <p>thiagolima86@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Linkedin</h6>
+                        <p>/in/thiagodeveloper</p>
+                    </div>
+                </div>
+            </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+                    <div class="footer">
+                        <div class="footer-text">
+                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Thiago Lima
+                        </div>
+                       </div>
+               <!--copyright-section-->
+     </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+<script>
+    particlesJS("particles", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":7,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":3,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+</script>
+
 </body>
 </html>
